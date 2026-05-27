@@ -2,6 +2,8 @@
 
 WikiToday is a desktop and mobile reader client for Wikipedia built using Tauri, SvelteKit, and Rust. It features a custom reading theme, local storage capability, and responsive layout adjustments for smaller screens.
 
+![WikiToday Responsive Mobile Layout](static/screenshot_mobile.png)
+
 ## Features
 
 * **Custom Reading Theme:** Built-in light and dark themes using the Lora serif font for the article content, styled first-letter drop caps, uppercase headers, and custom dotted underlines for links.
