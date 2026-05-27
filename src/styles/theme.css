@@ -1,9 +1,9 @@
 :root[data-theme="dark"] {
-  --bg-base:            #1A1409;
-  --bg-surface:         #211A0B;
-  --bg-panel:           #2A2010;
-  --bg-hover:           #332814;
-  --bg-active:          #3D3018;
+  --bg-base:            #231C12;
+  --bg-surface:         #2C2317;
+  --bg-panel:           #362C1D;
+  --bg-hover:           #403423;
+  --bg-active:          #4B3E2B;
 
   --border-subtle:      rgba(255, 220, 140, 0.06);
   --border-default:     rgba(255, 220, 140, 0.10);
