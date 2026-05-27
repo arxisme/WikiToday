@@ -1117,7 +1117,6 @@
 		--bg-card: var(--bg-surface);
 		--border-color: var(--border-default);
 		--border-color-muted: var(--border-subtle);
-		--text-primary: var(--text-primary);
 		--text-secondary: var(--text-muted);
 		--text-white: var(--text-primary);
 		--text-muted-color: var(--text-faint);
