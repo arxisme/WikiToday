@@ -1,0 +1,97 @@
+:root[data-theme="dark"] {
+  --bg-base:            #1A1409;
+  --bg-surface:         #211A0B;
+  --bg-panel:           #2A2010;
+  --bg-hover:           #332814;
+  --bg-active:          #3D3018;
+
+  --border-subtle:      rgba(255, 220, 140, 0.06);
+  --border-default:     rgba(255, 220, 140, 0.10);
+  --border-strong:      rgba(255, 220, 140, 0.20);
+
+  --accent-gold:        #C49A3C;
+  --accent-gold-dim:    #8B5E1A;
+  --accent-gold-bg:     rgba(196, 154, 60, 0.10);
+  --accent-red:         #8B2020;
+  --accent-red-dim:     #5C1414;
+  --accent-red-bg:      rgba(139, 32, 32, 0.12);
+
+  --text-primary:       #F0E6C8;
+  --text-muted:         #B8A878;
+  --text-faint:         #7A6A4A;
+  --text-link:          #C49A3C;
+  --text-link-hover:    #E8C86A;
+}
+
+:root[data-theme="light"] {
+  --bg-base:            #F5F0E8;
+  --bg-surface:         #FFFDF7;
+  --bg-panel:           #EDE5D0;
+  --bg-hover:           #E0D5BC;
+  --bg-active:          #D4C8A8;
+
+  --border-subtle:      rgba(90, 60, 10, 0.07);
+  --border-default:     rgba(90, 60, 10, 0.12);
+  --border-strong:      rgba(90, 60, 10, 0.22);
+
+  --accent-gold:        #8B5E1A;
+  --accent-gold-dim:    #6B4A12;
+  --accent-gold-bg:     #F5EDD8;
+  --accent-red:         #7A1A1A;
+  --accent-red-dim:     #5A1010;
+  --accent-red-bg:      #F5D5D5;
+
+  --text-primary:       #1A1206;
+  --text-muted:         #7A6040;
+  --text-faint:         #B0976A;
+  --text-link:          #7A1A1A;
+  --text-link-hover:    #A02020;
+}/* Article body — serif for long-form reading */
+.wiki-content {
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--text-primary);
+  max-width: 68ch;        /* keeps line length readable */
+  margin: 0 auto;
+}
+
+/* Drop cap on first paragraph — classic journal style */
+.wiki-content > p:first-of-type::first-letter {
+  font-size: 3.6em;
+  font-weight: 400;
+  line-height: 0.8;
+  float: left;
+  margin: 0.05em 0.1em 0 0;
+  color: var(--accent-gold);
+}
+
+/* Section headings — small caps feel */
+.wiki-content h2 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 0.5px solid var(--border-default);
+  padding-bottom: 6px;
+  margin: 2.5rem 0 1rem;
+}
+
+/* UI chrome — system sans for sidebar, nav, labels */
+.sidebar, .specs-panel, .breadcrumbs {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Wiki links — dotted underline instead of solid */
+.wiki-content a {
+  color: var(--text-link);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+}
+.wiki-content a:hover {
+  color: var(--text-link-hover);
+  text-decoration-style: solid;
+}
